@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.env.DISCORD_BOT_SECRET;
 const mySecret = process.env['TOKEN']
+const keep_alive = require('./keep_alive.js')
 
 client.on('ready', () => {
   console.log("I'm in");
